@@ -2,7 +2,9 @@ import "./category-item.styles.scss";
 
 const CategoryItem = ({ category }) => {
   const { title, imageUrl } = category;
-  const capitalizedTitle = `${title[0].toUpperCase()}${title.slice(1)}`;
+  const capitalizedTitle = `${title[0].toUpperCase()}${title
+    .slice(1)
+    .toLowerCase()}`;
 
   return (
     <div className="category-container">

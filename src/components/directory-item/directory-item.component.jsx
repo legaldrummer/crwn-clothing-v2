@@ -8,7 +8,6 @@ import {
 
 const DirectoryItem = ({ category }) => {
   const { title, imageUrl, route } = category;
-  console.log(route);
   const navigate = useNavigate();
 
   const onNavigateHandler = () => navigate(route);
